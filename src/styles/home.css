@@ -1,0 +1,218 @@
+#big{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    #big{
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+    } 
+  }
+  
+nav .links:hover{
+    border-bottom: 2px solid hsl(26, 100%, 55%); /* Specify your desired underline color */
+}
+.thumbnails_div{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnails_div img{
+    width: 20%;
+    height: 100px;
+    margin: 2%;
+    border-radius: 10px;
+}
+.thumbnails_div img:hover{
+    opacity: 0.4;
+}
+
+#company{
+    color: hsl(26, 100%, 55%);
+    font-weight: 900;
+}
+#title{
+    margin-bottom: 40px;
+    font-weight: 900;
+}
+.price_div{
+    display: flex;
+    justify-content:start;
+    font-weight: 900;
+
+}
+.price{
+    font-weight: 900;
+}
+
+.price_div .off{
+    color:hsl(26, 100%, 55%);
+    background-color: antiquewhite;
+    border-radius:10px ;
+    margin: 5px;
+    display: inline;
+    height: 22px;
+}
+
+#strike{
+    text-decoration: line-through;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.counter .fa{
+    color: hsl(26, 100%, 55%);
+    font-size: 32px;
+}
+
+.cart .fake_button{
+    background-color: hsl(26, 100%, 55%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 1px solid black;
+    padding: 5px;
+}
+
+.cart .fake_button:hover{
+    cursor: pointer;
+}
+
+
+.cart .fake_button p{
+    color: aliceblue;
+    font-size: 24px;
+}
+.cart .fake_button .fa-shopping-cart{
+    color: aliceblue;
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+
+.basket{
+    height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+
+.float {
+    display: none;
+  }
+@media screen and (max-width: 480px) {
+    .float {
+        display:flex;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        height: 50px;
+        z-index: 2;
+      }
+     
+  }
+  
+
+.basket div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 350px;
+}
+
+.x{
+    color: red;
+    text-align: end;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.total{
+    font-weight: 700;
+}
+
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    right: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  
+.basket li{
+    list-style-type: none;
+
+}
